@@ -3,11 +3,13 @@ function guardar() {
     let c = document.getElementById("txtCarrera").value
     let d = document.getElementById("txtDuracion").value
     let t = document.getElementById("txtTecnologias").value
+    let i = document.getElementById("txtImage").value
  
     let oferta = {
         carrera: c,
         duracion: d,
-        tecnologias: t
+        tecnologias: t,
+        image: i
     }
     let url = "http://localhost:5000/ofertas"
     var options = {

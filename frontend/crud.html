@@ -33,6 +33,7 @@
                             <th>Carrera</th>
                             <th>Duracion</th>
                             <th>Tecnologias</th>
+                            <th>Imagen</th> 
                             <th>Acciones</th>
                         </tr>
                         <tr  v-for="oferta in ofertas">
@@ -40,8 +41,9 @@
                             <td class="centrar">{{oferta.carrera}}</td>
                             <td class="centrar">{{oferta.duracion}}</td>
                             <td class="centrar">{{oferta.tecnologias}}</td>
+                            <td class="centrar"><img :src="oferta.image" :alt="oferta.image" :width="150"></td>
                             <td class="centrar">
-                                <a :href="'update.html?id='+oferta.id+'&carrera='+oferta.carrera+'&duracion='+oferta.duracion+'&tecnologias='+oferta.tecnologias" class="btn btn-primary">Modificar</a>
+                                <a :href="'update.html?id='+oferta.id+'&carrera='+oferta.carrera+'&duracion='+oferta.duracion+'&tecnologias='+oferta.tecnologias+'&image='+oferta.image" class="btn btn-primary">Modificar</a>
                                 <button v-on:click="eliminar(oferta.id)" class="btn btn-danger">Eliminar</button>
                             </td>
                         </tr>
