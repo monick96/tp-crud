@@ -1,0 +1,9 @@
+# created by virtualenv automatically
+ignorar estas carpetas
+Scripts/
+Lib/
+include/
+pyvenv.cfg
+
+
+
