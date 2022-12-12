@@ -1,2 +1,2 @@
 # tp-crud
-proyecto pagina web cursos y crud de ofertas educativas
+proyecto pagina web cursos y crud de ofertas educativas. Solo archivos. 
